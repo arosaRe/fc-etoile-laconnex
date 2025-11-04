@@ -1,0 +1,39 @@
+{
+  "name": "fc-etoile-laconnex",
+  "version": "1.0.0",
+  "description": "Site web officiel du FC Etoile Laconnex - Refonte complète avec Strapi CMS et Astro",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run develop",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "clean": "rm -rf backend/node_modules frontend/node_modules node_modules",
+    "setup": "npm run install:all && cp backend/.env.example backend/.env"
+  },
+  "keywords": [
+    "football",
+    "strapi",
+    "astro",
+    "cms",
+    "static-site",
+    "switzerland",
+    "geneva"
+  ],
+  "author": "Claude Assistant & Anthony",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
