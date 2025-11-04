@@ -1,0 +1,45 @@
+{
+  "name": "fc-etoile-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend Strapi pour FC Etoile Laconnex",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.30.0",
+    "@strapi/plugin-users-permissions": "5.30.0",
+    "@strapi/strapi": "5.30.0",
+    "axios": "^1.13.1",
+    "better-sqlite3": "11.3.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "mysql2": "^3.15.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "b23e8e0c-433c-488e-b408-b1627b5cd9b0",
+    "installId": "303c857845b62b87721f8ab041d2225738995b15f42cc31e4db6679e58eceddc"
+  }
+}
